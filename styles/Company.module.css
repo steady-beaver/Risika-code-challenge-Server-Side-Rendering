@@ -1,0 +1,134 @@
+.company h3{
+    /* color: hotpink; */
+    font-weight: 700;
+    font-size: 48px;
+    width: max-content;
+    margin: 70px auto 40px 10%;
+}
+.general{
+    position: relative;
+}
+
+.frame{
+    padding: 30px;
+    border: 3px solid orange;
+    border-radius: 25px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.frame *{
+    padding: 2px;
+}
+
+.field{
+    display: flex;
+    padding-bottom: 4px;
+}
+
+.field > span:first-child{
+    font-weight: bold;
+    display: inline-block;
+    width: 300px;
+}
+
+.rows{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.backBtn{
+    color: #212529;
+    background: #ffcc89;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    width: min-content;
+    border-radius: 50px;
+    transition: 0.15s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    outline: none;
+    border: none;
+}
+
+.backBtn:hover{
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+.feature{
+    display: flex;
+}
+
+.feature .iconFrame{
+    display: flex;
+    padding: 10px;
+    width: 70px;
+}
+
+.feature .text{
+    width: 90%;
+}
+
+.feature .text .title{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+
+.positive{
+    color: #0CBE29;
+}
+.negative{
+    color: #DE0000;
+}
+.neutral{
+    color: #0057FF;
+}
+
+/*        MANAGEMENT      */
+
+.management{
+    padding-bottom: 50px;
+}
+
+.seniorityTable{
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.seniorityTable th{
+    padding: 5px;
+}
+
+.seniorityTable thead th{
+    padding-bottom: 20px;
+}
+
+.seniorityTable tbody th{
+    font-weight: normal;
+}
+.seniorityTable tbody tr:first-of-type{
+    border-top: 1px solid #ffcc89;
+}
+.seniorityTable tbody tr{
+    border-bottom: 1px solid #ffcc89;
+}
+
+.seniorityTable tbody tr:hover{
+    background-color: white;
+}
+
+.seniorityTable th:nth-child(3){
+    width: 100px
+}
+
+.seniorityTable th:nth-child(5){
+    width: 150px
+}
+
+
+

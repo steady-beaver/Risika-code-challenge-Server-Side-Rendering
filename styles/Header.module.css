@@ -1,0 +1,13 @@
+.header{
+    flex: 0 1 auto;
+    margin: 0;
+    padding-bottom: 2rem;
+    background-color: #0B373D;
+}
+
+.header h1{
+    color: #5BD0DF;
+    font-size: 6em;
+    font-weight: 300;
+    margin: 0;
+}

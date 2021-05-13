@@ -1,8 +1,8 @@
 import companies from "@/data/companies.json"
-import {matchSorter} from "match-sorter"
+import { matchSorter } from "match-sorter"
 
 export default (req, res) => {
-  const {query} = req.query
+  const { query } = req.query
 
   let searchResults = []
 
