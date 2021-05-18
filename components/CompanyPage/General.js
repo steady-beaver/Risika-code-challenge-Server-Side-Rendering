@@ -15,7 +15,7 @@ const General = ({ id }) => {
           `http://localhost:3000/api/company/basics/${id}`,
         )
         const data = await res.data.data
-        console.log(data)
+        // console.log("Data length response", Object.keys(data).length)
         setData({ ...data })
       } catch (err) {
         setError(err.message)

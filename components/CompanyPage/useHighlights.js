@@ -25,7 +25,7 @@ const useHighlights = (id) => {
   }, [id])
 
   useEffect(() => {
-    if (Object.keys(highlightsData).length > 0) {
+    if (highlightsData && Object.keys(highlightsData).length > 0) {
       const [pos, neg, neu] = digest(highlightsData)
       setPositiveSorted(pos)
       setNegativeSorted(neg)
