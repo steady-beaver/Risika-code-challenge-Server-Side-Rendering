@@ -6,7 +6,6 @@ import styles from "../../styles/Company.module.css"
 const General = ({ id }) => {
   const [data, setData] = useState({})
   const [error, setError] = useState("")
-  // const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const getGeneralInfo = async () => {
