@@ -38,13 +38,15 @@ const activeFunctions = (relation) => ({
  * @param  {...string} roles The roles to check if the relation has.
  * @returns {boolean} Whether the relation contains one of the roles.
  */
-const hasRoles = (...roles) => (relation) => {
-  return (
-    !!relation.functions.filter((fn) => roles.includes(fn.function)).length ||
-    !!relation.inactiveFunctions.filter((fn) => roles.includes(fn.function))
-      .length
-  )
-}
+const hasRoles =
+  (...roles) =>
+  (relation) => {
+    return (
+      !!relation.functions.filter((fn) => roles.includes(fn.function)).length ||
+      !!relation.inactiveFunctions.filter((fn) => roles.includes(fn.function))
+        .length
+    )
+  }
 
 /*********************
  * Extract relations *
@@ -99,7 +101,7 @@ const getManagement = (relations) => {
 }
 
 const companyRelations = ({ id }) => {
-  return fetch("/api/company/relations/" + id)
+  return fetch("http://localhost:3000/api/company/relations/" + id)
     .then((data) => data.json())
     .then(({ data }) => {
       return {

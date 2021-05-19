@@ -77,7 +77,8 @@ const Home = () => {
             <ul>
               {result.map((company) => (
                 <Link
-                  href={`company/${company.local_organization_id.id}`}
+                  // href={`company/${company.local_organization_id.id}`}
+                  href={`/company/${company.local_organization_id.id}`}
                   key={company.local_organization_id.id}
                 >
                   <div className={styles.companyItem}>

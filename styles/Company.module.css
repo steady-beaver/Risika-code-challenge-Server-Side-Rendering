@@ -126,6 +126,10 @@
     width: 100px
 }
 
+.seniorityTable th:nth-child(4){
+    width: 100px
+}
+
 .seniorityTable th:nth-child(5){
     width: 150px
 }

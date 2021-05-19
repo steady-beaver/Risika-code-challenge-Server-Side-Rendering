@@ -1,36 +1,12 @@
-import { useState, useEffect } from "react"
-import axios from "axios"
 import Link from "next/link"
 import styles from "../../styles/Company.module.css"
 
-const General = ({ id }) => {
-  const [data, setData] = useState({})
-  const [error, setError] = useState("")
-
-  useEffect(() => {
-    const getGeneralInfo = async () => {
-      try {
-        setError("")
-        const res = await axios.get(
-          `http://localhost:3000/api/company/basics/${id}`,
-        )
-        const data = await res.data.data
-        // console.log("Data length response", Object.keys(data).length)
-        setData({ ...data })
-      } catch (err) {
-        setError(err.message)
-      }
-    }
-
-    getGeneralInfo()
-  }, [id])
-
+const General = ({ generalData: data }) => {
   return (
     <>
       {Object.keys(data).length > 0 && (
         <section className={styles.general}>
           <h3>{data.company_name}</h3>
-          {error && <div className="error">{error}</div>}
           <div className={styles.frame}>
             <div className={styles.field}>
               <span>VAT registration </span>
